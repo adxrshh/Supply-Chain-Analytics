@@ -32,15 +32,10 @@ DataCo's orders are only meeting their promised delivery date **45% of the time*
 ## Repository structure
 
 - `README.md`
-- `data/` — place raw CSV here (see Kaggle link above)
-- `notebooks/`
-  - `dataco_cleaning.ipynb` — data cleaning pipeline
-- `sql/`
-  - `schema.sql` — table creation
-  - `analysis_queries.sql` — all 20 analysis queries, commented
-- `powerbi/`
-  - `supply_chain_dashboard.pbix`
-- `images/` — dashboard screenshots
+- `supply_chain_cleaning.ipynb` — data cleaning pipeline
+- `AnalysisSupplyChain.sql` — schema + all analysis queries
+- `Supplychain.pbix` — Power BI dashboard
+- Screenshot images — dashboard preview (see below)
   
 ## Key findings
 
