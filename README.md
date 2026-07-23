@@ -22,39 +22,26 @@ DataCo's orders are only meeting their promised delivery date **45% of the time*
 
 ## Project pipeline
 
-Raw CSV (flat, 53 columns)
-│
-▼
-Python cleaning (Jupyter Notebook)
-→ drop dead/PII columns, handle nulls, validate date logic, standardize text
-│
-▼
-Split into normalized tables (customers, products, orders, order_items)
-│
-▼
-PostgreSQL (schema + load)
-│
-▼
-SQL analysis (20 queries — delivery performance, profit impact, product/customer drill-downs)
-│
-▼
-Power BI dashboard (3 pages)
+1. **Raw CSV** (flat, 53 columns)
+2. **Python cleaning** (Jupyter Notebook) — drop dead/PII columns, handle nulls, validate date logic, standardize text
+3. **Split into normalized tables** — customers, products, orders, order_items
+4. **PostgreSQL** — schema creation + data load
+5. **SQL analysis** — 20 queries covering delivery performance, profit impact, and product/customer drill-downs
+6. **Power BI dashboard** — 3 pages
 
 ## Repository structure
 
-supply-chain-analytics/
-├── README.md
-├── data/ # place raw CSV here (see Kaggle link above)
-├── notebooks/
-│ └── dataco_cleaning.ipynb # data cleaning pipeline
-├── sql/
-│ ├── schema.sql # table creation
-│ └── analysis_queries.sql # all 20 analysis queries, commented
-├── powerbi/
-│ └── supply_chain_dashboard.pbix
-└── images/
-└── (dashboard screenshots)
-
+- `README.md`
+- `data/` — place raw CSV here (see Kaggle link above)
+- `notebooks/`
+  - `dataco_cleaning.ipynb` — data cleaning pipeline
+- `sql/`
+  - `schema.sql` — table creation
+  - `analysis_queries.sql` — all 20 analysis queries, commented
+- `powerbi/`
+  - `supply_chain_dashboard.pbix`
+- `images/` — dashboard screenshots
+  
 ## Key findings
 
 **1. Delivery performance is chronically low, and has been for 3+ years.**
