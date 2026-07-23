@@ -77,15 +77,13 @@ Among the top 10 customers by sales, on-time delivery ranged from 17.02% to 73.8
 ## Dashboard preview
 
 **Page 1 — Executive Overview**
-![Executive Overview](images/page1_overview.png)
+![Executive Overview](page1_executive_overview.png)
 
 **Page 2 — Shipping Mode Deep Dive**
-![Shipping Mode Deep Dive](images/page2_shipping.png)
+![Shipping Mode Deep Dive](page2_shipping_analysis.png)
 
 **Page 3 — Product & Profit Drill-Down**
-![Product & Profit Drill-Down](images/page3_product.png)
-
-## How to reproduce this project
+![Product & Profit Drill-Down](page3_product_profit.png)
 
 1. Download the dataset from Kaggle and place `DataCoSupplyChainDataset.csv` in `/data`
 2. Run `notebooks/dataco_cleaning.ipynb` to clean and split the data into normalized tables
@@ -93,5 +91,3 @@ Among the top 10 customers by sales, on-time delivery ranged from 17.02% to 73.8
 4. Load the four cleaned CSVs (`customers`, `products`, `orders`, `order_items`) into their respective tables
 5. Run the queries in `sql/analysis_queries.sql` to reproduce the analysis
 6. Open `powerbi/supply_chain_dashboard.pbix` in Power BI Desktop (update the data source path if needed) to explore the dashboard
-
-## Adarsh Yadav
